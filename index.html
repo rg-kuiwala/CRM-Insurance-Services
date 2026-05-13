@@ -1,279 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Latest news updates on politics, technology, entertainment, and sports.">
-    <meta name="keywords" content="news, politics, technology, entertainment, sports">
-    <meta name="author" content="News24Echo">
-    <title>News24Echo - Latest News Updates</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CRM Insurance Services</title>
 
-        /* Header */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background: #333;
-            color: #fff;
-        }
-        header .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        header nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-        header nav ul li {
-            margin: 0 10px;
-        }
-        header nav ul li a {
-            color: #fff;
-            font-size: 16px;
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-        /* Breaking News Widget */
-        .breaking-news {
-            background: #ff0000;
-            color: #fff;
-            padding: 10px;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .breaking-news marquee a {
-            color: #fff;
-            margin-right: 20px;
-        }
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
 
-        /* Main Content */
-        .container {
-            display: flex;
-            padding: 10px;
-        }
-        .post-grid {
-            flex: 3;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-        }
-        .post {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-        .post img {
-            width: 100%;
-            height: auto;
-        }
-        .post h2 {
-            font-size: 10px;
-            margin: 10px;
-        }
-        .post h2 a {
-            color: #333;
-        }
-        .tags {
-            margin: 10px;
-        }
-        .tag {
-            display: inline-block;
-            background: #ff0000;
-            color: #fff;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#f4f7fb;
+      color:#222;
+      overflow-x:hidden;
+    }
 
-        /* Sidebar */
-        .sidebar {
-            flex: 1;
-            padding: 20px;
-            background: #f4f4f4;
-            margin-left: 20px;
-        }
-        .widget {
-            margin-bottom: 20px;
-        }
-        .widget h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        .widget ul {
-            list-style: none;
-            padding: 0;
-        }
-        .widget ul li {
-            margin: 10px 0;
-        }
-        .widget ul li a {
-            color: #333;
-        }
+    a{
+      text-decoration:none;
+    }
 
-        /* Footer */
-        footer {
-            background: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .footer-menu ul {
-            list-style: none;
-            padding: 0;
-        }
-        .footer-menu ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        .footer-menu ul li a {
-            color: #fff;
-        }
-        .social-icons a {
-            color: #fff;
-            margin: 0 10px;
-            font-size: 20px;
-        }
+    /* HEADER */
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .post-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .container {
-                flex-direction: column;
-            }
-            .sidebar {
-                margin-left: 0;
-                margin-top: 20px;
-            }
-        }
-        @media (max-width: 480px) {
-            .post-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    header{
+      width:100%;
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:999;
+      background:rgba(0,0,0,0.75);
+      backdrop-filter:blur(10px);
+      padding:15px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      color:#fff;
+      font-size:28px;
+      font-weight:800;
+    }
+
+    .logo span{
+      color:#00c6ff;
+    }
+
+    nav a{
+      color:#fff;
+      margin-left:25px;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#00c6ff;
+    }
+
+    /* HERO */
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:120px 8% 60px;
+      background:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      color:#fff;
+      flex-wrap:wrap;
+    }
+
+    .hero-text{
+      max-width:650px;
+    }
+
+    .hero-text h1{
+      font-size:60px;
+      line-height:1.1;
+      margin-bottom:20px;
+    }
+
+    .hero-text h1 span{
+      color:#00c6ff;
+    }
+
+    .hero-text p{
+      font-size:18px;
+      line-height:1.8;
+      margin-bottom:35px;
+      color:#ddd;
+    }
+
+    .hero-btns{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:15px 30px;
+      border-radius:50px;
+      font-weight:600;
+      transition:0.3s;
+      display:inline-block;
+    }
+
+    .btn-primary{
+      background:#00c6ff;
+      color:#fff;
+    }
+
+    .btn-primary:hover{
+      background:#0097c5;
+      transform:translateY(-3px);
+    }
+
+    .btn-secondary{
+      border:2px solid #fff;
+      color:#fff;
+    }
+
+    .btn-secondary:hover{
+      background:#fff;
+      color:#000;
+    }
+
+    /* SERVICES */
+
+    .section{
+      padding:90px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .section-title h2{
+      font-size:42px;
+      margin-bottom:15px;
+      color:#0b1c39;
+    }
+
+    .section-title p{
+      color:#666;
+      font-size:17px;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .service-card{
+      background:#fff;
+      padding:35px 25px;
+      border-radius:20px;
+      transition:0.4s;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .service-card:hover{
+      transform:translateY(-10px);
+    }
+
+    .service-icon{
+      font-size:45px;
+      margin-bottom:20px;
+    }
+
+    .service-card h3{
+      margin-bottom:15px;
+      color:#0b1c39;
+    }
+
+    .service-card p{
+      color:#666;
+      line-height:1.7;
+    }
+
+    /* COMPANIES */
+
+    .companies{
+      background:#0b1c39;
+      color:#fff;
+    }
+
+    .company-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:25px;
+      margin-top:40px;
+    }
+
+    .company-box{
+      background:rgba(255,255,255,0.08);
+      padding:25px;
+      border-radius:15px;
+      text-align:center;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .company-box:hover{
+      background:#00c6ff;
+      transform:scale(1.05);
+    }
+
+    /* WHY US */
+
+    .why-us{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .why-box{
+      background:#fff;
+      padding:30px;
+      border-left:5px solid #00c6ff;
+      border-radius:15px;
+      box-shadow:0 5px 25px rgba(0,0,0,0.08);
+    }
+
+    .why-box h3{
+      margin-bottom:15px;
+      color:#0b1c39;
+    }
+
+    .why-box p{
+      color:#666;
+      line-height:1.7;
+    }
+
+    /* CONTACT */
+
+    .contact{
+      background:linear-gradient(135deg,#0b1c39,#102b5c);
+      color:#fff;
+      border-radius:30px;
+      padding:60px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:40px;
+    }
+
+    .contact h2{
+      font-size:40px;
+      margin-bottom:20px;
+    }
+
+    .contact p{
+      line-height:1.8;
+      color:#ddd;
+      margin-bottom:15px;
+    }
+
+    .contact-info{
+      background:rgba(255,255,255,0.08);
+      padding:30px;
+      border-radius:20px;
+    }
+
+    .contact-info h3{
+      margin-bottom:25px;
+      color:#00c6ff;
+    }
+
+    .contact-info p{
+      margin-bottom:15px;
+      font-size:17px;
+    }
+
+    footer{
+      background:#071225;
+      color:#ccc;
+      text-align:center;
+      padding:25px;
+      margin-top:60px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      .hero-text h1{
+        font-size:42px;
+      }
+
+      nav{
+        display:none;
+      }
+
+      .contact{
+        padding:40px 25px;
+      }
+
+    }
+  </style>
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">News24Echo</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Politics</a></li>
-                <li><a href="#">Technology</a></li>
-                <li><a href="#">Entertainment</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Breaking News Widget -->
-    <div class="breaking-news">
-        <span>Breaking News:</span>
-        <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
-            <a href="https://usatazatime.blogspot.com">USA Taza Time</a> | 
-            <a href="#">RG AITools</a> | 
-            <a href="https://ceomind-india.blogspot.com">CEO Mind India</a>
-        </marquee>
+  <!-- HEADER -->
+
+  <header>
+    <div class="logo">Mahawar <span>Insurance</span></div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#companies">Companies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-text">
+      <h1>Secure Your Future With <span>Trusted Insurance Services</span></h1>
+
+      <p>
+        Get affordable and reliable Motor Insurance, Health Insurance,
+        Life Insurance, Travel Insurance and more with fast claim support
+        from India's leading insurance companies.
+      </p>
+
+      <div class="hero-btns">
+        <a href="tel:6375005698" class="btn btn-primary">
+          Call Now
+        </a>
+
+        <a href="#contact" class="btn btn-secondary">
+          Get Free Consultation
+        </a>
+      </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Post Grid -->
-        <main class="post-grid">
-            <div class="post">
-                <img src="https://via.placeholder.com/300x200" alt="Post 1">
-                <h2><a href="https://usatazatime.blogspot.com">
-                    News24Echo Good Morning To All</a></h2>
-                <div class="tags">
-                    <a href="#" class="tag">Politics</a>
-                    <a href="#" class="tag">News</a>
-                </div>
-            </div>
-            <div class="post">
-                <img src="https://via.placeholder.com/300x200" alt="Post 2">
-                <h2><a href="#">Post Title 2</a></h2>
-                <div class="tags">
-                    <a href="#" class="tag">Technology</a>
-                </div>
-            </div>
-            <!-- Add more posts here -->
-            <div class="post" style="border:1px solid #e1e4e8; padding:20px; margin:20px; max-width:600px; font-family:Arial, sans-serif;">
-    <span class="tag" style="background:#0366d6; color:white; padding:4px 8px; border-radius:4px; font-size:0.9em;">Tech News</span>
-    <h2 style="margin:15px 0 10px;">GitHub Unveils Next-Gen AI Coding Assistant</h2>
-    <img src="https://via.placeholder.com/150" alt="GitHub AI Assistant" style="float:left; margin-right:15px; width:150px; height:auto;">
-    <p style="line-height:1.6; color:#24292e;">GitHub announced groundbreaking AI-powered code completion tools, revolutionizing developer workflows. The new Copilot X integrates GPT-4, offering real-time code suggestions and documentation. Developers can now generate complex code structures through natural language prompts. Early tests show 45% productivity boost in coding tasks. Available across VS Code, JetBrains, and cloud environments. Includes enhanced security scanning and contextual awareness. Free tier for students, Pro plan at $10/month. Partnership with OpenAI brings...</p>
-    <a href="#" style="color:#0366d6; text-decoration:none; display:inline-block; margin-top:10px;">Read More →</a>
-    <div style="clear:both;"></div>
-    <footer style="margin-top:15px; color:#6a737d; font-size:0.9em;">Posted: 2023-08-15 | Author: Dev Insights</footer>
-</div>
+  </section>
 
-            
-        </main>
+  <!-- SERVICES -->
 
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="widget">
-                <h3>Popular Posts</h3>
-                <ul>
-                    <li><a href="#">Post 1</a></li>
-                    <li><a href="#">Post 2</a></li>
-                    <li><a href="#">Post 3</a></li>
-                </ul>
-            </div>
-            <div class="widget">
-                <h3>You May Like It</h3>
-                <ul>
-                    <li><a href="#">Post 4</a></li>
-                    <li><a href="#">Post 5</a></li>
-                    <li><a href="#">Post 6</a></li>
-                </ul>
-            </div>
-            <div class="widget">
-                <h3>Categories</h3>
-                <ul>
-                    <li><a href="#">Politics</a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">Entertainment</a></li>
-                </ul>
-            </div>
-        </aside>
+  <section class="section" id="services">
+
+    <div class="section-title">
+      <h2>Our Insurance Services</h2>
+      <p>Professional insurance solutions for every need</p>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-menu">
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-    </footer>
+    <div class="services">
+
+      <div class="service-card">
+        <div class="service-icon">🚗</div>
+        <h3>Motor Insurance</h3>
+        <p>
+          Affordable car and bike insurance plans with quick claim settlement and maximum coverage benefits.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🏥</div>
+        <h3>Health Insurance</h3>
+        <p>
+          Protect your family with low-cost medical insurance plans and cashless hospitalization facilities.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">❤️</div>
+        <h3>Life Insurance</h3>
+        <p>
+          Secure your loved ones with trusted life insurance and future financial protection plans.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">✈️</div>
+        <h3>Travel Insurance</h3>
+        <p>
+          Enjoy stress-free travel with domestic and international travel insurance coverage.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMPANIES -->
+
+  <section class="section companies" id="companies">
+
+    <div class="section-title">
+      <h2 style="color:white;">Popular Insurance Companies</h2>
+      <p style="color:#ddd;">
+        We work with India's trusted insurance providers
+      </p>
+    </div>
+
+    <div class="company-grid">
+
+      <div class="company-box">LIC India</div>
+      <div class="company-box">HDFC ERGO</div>
+      <div class="company-box">ICICI Lombard</div>
+      <div class="company-box">Star Health</div>
+      <div class="company-box">Bajaj Allianz</div>
+      <div class="company-box">SBI Life</div>
+      <div class="company-box">TATA AIG</div>
+      <div class="company-box">New India Assurance</div>
+
+    </div>
+
+  </section>
+
+  <!-- WHY US -->
+
+  <section class="section">
+
+    <div class="section-title">
+      <h2>Why Choose Us</h2>
+      <p>Trusted advice with best customer support</p>
+    </div>
+
+    <div class="why-us">
+
+      <div class="why-box">
+        <h3>Lowest Premium Plans</h3>
+        <p>
+          Get affordable insurance policies with maximum coverage benefits at competitive prices.
+        </p>
+      </div>
+
+      <div class="why-box">
+        <h3>Fast Claim Support</h3>
+        <p>
+          Hassle-free and quick claim assistance for all insurance services.
+        </p>
+      </div>
+
+      <div class="why-box">
+        <h3>Professional Guidance</h3>
+        <p>
+          Expert insurance consultation according to your personal and family needs.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="section" id="contact">
+
+    <div class="contact">
+
+      <div>
+        <h2>Get In Touch</h2>
+
+        <p>
+          Contact us today for the best insurance plans and professional advice.
+        </p>
+
+        <p>
+          We help customers choose the right insurance with affordable pricing and trusted claim services.
+        </p>
+      </div>
+
+      <div class="contact-info">
+
+        <h3>Contact Details</h3>
+
+        <p><strong>Insurance Adviser:</strong> Chhotu Ram Mahawar</p>
+
+        <p><strong>Mobile:</strong> +91 6375005698</p>
+
+        <p><strong>Email:</strong> khemchand613@gmail.com</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    © 2026 Mahawar Insurance Services | All Rights Reserved
+  </footer>
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    // Smooth header shadow on scroll
+
+    window.addEventListener("scroll", function(){
+
+      const header = document.querySelector("header");
+
+      if(window.scrollY > 50){
+        header.style.boxShadow = "0 5px 20px rgba(0,0,0,0.3)";
+      } else {
+        header.style.boxShadow = "none";
+      }
+
+    });
+
+  </script>
+
 </body>
 </html>
+
