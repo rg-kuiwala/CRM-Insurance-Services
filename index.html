@@ -1,311 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>CRM Insurance Services</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
   <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      scroll-behavior:smooth;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
-    body{
-      font-family:'Poppins',sans-serif;
-      background:#f4f7fb;
-      color:#222;
-      overflow-x:hidden;
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fb;
+      color: #222;
+      overflow-x: hidden;
     }
 
-    a{
-      text-decoration:none;
+    a {
+      text-decoration: none;
     }
 
     /* HEADER */
 
-    header{
-      width:100%;
-      position:fixed;
-      top:0;
-      left:0;
-      z-index:999;
-      background:rgba(0,0,0,0.75);
-      backdrop-filter:blur(10px);
-      padding:15px 8%;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
+    header {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      padding: 18px 8%;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(12px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .logo{
-      color:#fff;
-      font-size:28px;
-      font-weight:800;
+    .logo {
+      color: #fff;
+      font-size: 30px;
+      font-weight: 800;
     }
 
-    .logo span{
-      color:#00c6ff;
+    .logo span {
+      color: #00c6ff;
     }
 
-    nav a{
-      color:#fff;
-      margin-left:25px;
-      font-weight:500;
-      transition:0.3s;
+    nav a {
+      color: #fff;
+      margin-left: 28px;
+      font-weight: 500;
+      transition: 0.3s;
     }
 
-    nav a:hover{
-      color:#00c6ff;
+    nav a:hover {
+      color: #00c6ff;
     }
 
     /* HERO */
 
-    .hero{
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding:120px 8% 60px;
+    .hero {
+      min-height: 100vh;
       background:
-      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-      url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop');
-      background-size:cover;
-      background-position:center;
-      color:#fff;
-      flex-wrap:wrap;
+        linear-gradient(rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)),
+        url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop');
+
+      background-size: cover;
+      background-position: center;
+
+      display: flex;
+      align-items: center;
+      padding: 130px 8% 80px;
+      color: #fff;
     }
 
-    .hero-text{
-      max-width:650px;
+    .hero-content {
+      max-width: 720px;
     }
 
-    .hero-text h1{
-      font-size:60px;
-      line-height:1.1;
-      margin-bottom:20px;
+    .hero-content h1 {
+      font-size: 62px;
+      line-height: 1.1;
+      margin-bottom: 25px;
     }
 
-    .hero-text h1 span{
-      color:#00c6ff;
+    .hero-content h1 span {
+      color: #00c6ff;
     }
 
-    .hero-text p{
-      font-size:18px;
-      line-height:1.8;
-      margin-bottom:35px;
-      color:#ddd;
+    .hero-content p {
+      font-size: 18px;
+      line-height: 1.9;
+      color: #ddd;
+      margin-bottom: 40px;
     }
 
-    .hero-btns{
-      display:flex;
-      gap:20px;
-      flex-wrap:wrap;
+    .hero-buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
     }
 
-    .btn{
-      padding:15px 30px;
-      border-radius:50px;
-      font-weight:600;
-      transition:0.3s;
-      display:inline-block;
+    .btn {
+      padding: 15px 32px;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: 0.3s;
+      display: inline-block;
     }
 
-    .btn-primary{
-      background:#00c6ff;
-      color:#fff;
+    .btn-primary {
+      background: #00c6ff;
+      color: white;
     }
 
-    .btn-primary:hover{
-      background:#0097c5;
-      transform:translateY(-3px);
+    .btn-primary:hover {
+      background: #0094c0;
+      transform: translateY(-4px);
     }
 
-    .btn-secondary{
-      border:2px solid #fff;
-      color:#fff;
+    .btn-secondary {
+      border: 2px solid white;
+      color: white;
     }
 
-    .btn-secondary:hover{
-      background:#fff;
-      color:#000;
+    .btn-secondary:hover {
+      background: white;
+      color: black;
+    }
+
+    /* SECTION */
+
+    .section {
+      padding: 90px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-title h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+      color: #0b1c39;
+    }
+
+    .section-title p {
+      color: #666;
+      font-size: 17px;
     }
 
     /* SERVICES */
 
-    .section{
-      padding:90px 8%;
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
     }
 
-    .section-title{
-      text-align:center;
-      margin-bottom:60px;
+    .service-card {
+      background: white;
+      border-radius: 22px;
+      padding: 35px 25px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+      transition: 0.4s;
+      cursor: pointer;
     }
 
-    .section-title h2{
-      font-size:42px;
-      margin-bottom:15px;
-      color:#0b1c39;
+    .service-card:hover {
+      transform: translateY(-10px);
     }
 
-    .section-title p{
-      color:#666;
-      font-size:17px;
+    .service-icon {
+      font-size: 50px;
+      margin-bottom: 20px;
     }
 
-    .services{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:30px;
+    .service-card h3 {
+      margin-bottom: 15px;
+      color: #0b1c39;
     }
 
-    .service-card{
-      background:#fff;
-      padding:35px 25px;
-      border-radius:20px;
-      transition:0.4s;
-      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    .service-card p {
+      color: #666;
+      line-height: 1.8;
     }
 
-    .service-card:hover{
-      transform:translateY(-10px);
+    .service-details {
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.5s ease;
     }
 
-    .service-icon{
-      font-size:45px;
-      margin-bottom:20px;
+    .service-details.active {
+      max-height: 900px;
+      margin-top: 25px;
     }
 
-    .service-card h3{
-      margin-bottom:15px;
-      color:#0b1c39;
+    .service-details h4 {
+      margin: 18px 0 12px;
+      color: #0b1c39;
     }
 
-    .service-card p{
-      color:#666;
-      line-height:1.7;
+    .service-details ul {
+      padding-left: 20px;
+    }
+
+    .service-details ul li {
+      margin-bottom: 10px;
+      color: #555;
+      line-height: 1.7;
     }
 
     /* COMPANIES */
 
-    .companies{
-      background:#0b1c39;
-      color:#fff;
+    .companies {
+      background: #0b1c39;
+      color: white;
     }
 
-    .company-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-      gap:25px;
-      margin-top:40px;
+    .company-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
     }
 
-    .company-box{
-      background:rgba(255,255,255,0.08);
-      padding:25px;
-      border-radius:15px;
-      text-align:center;
-      font-weight:600;
-      transition:0.3s;
+    .company-box {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 25px;
+      border-radius: 16px;
+      text-align: center;
+      font-weight: 600;
+      transition: 0.3s;
     }
 
-    .company-box:hover{
-      background:#00c6ff;
-      transform:scale(1.05);
+    .company-box:hover {
+      background: #00c6ff;
+      transform: scale(1.05);
     }
 
     /* WHY US */
 
-    .why-us{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-      gap:30px;
+    .why-us {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
     }
 
-    .why-box{
-      background:#fff;
-      padding:30px;
-      border-left:5px solid #00c6ff;
-      border-radius:15px;
-      box-shadow:0 5px 25px rgba(0,0,0,0.08);
+    .why-box {
+      background: white;
+      padding: 35px;
+      border-left: 5px solid #00c6ff;
+      border-radius: 18px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
     }
 
-    .why-box h3{
-      margin-bottom:15px;
-      color:#0b1c39;
+    .why-box h3 {
+      margin-bottom: 15px;
+      color: #0b1c39;
     }
 
-    .why-box p{
-      color:#666;
-      line-height:1.7;
+    .why-box p {
+      color: #666;
+      line-height: 1.8;
     }
 
     /* CONTACT */
 
-    .contact{
-      background:linear-gradient(135deg,#0b1c39,#102b5c);
-      color:#fff;
-      border-radius:30px;
-      padding:60px;
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-      gap:40px;
+    .contact-box {
+      background: linear-gradient(135deg, #0b1c39, #12376d);
+      color: white;
+      padding: 60px;
+      border-radius: 30px;
+
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
     }
 
-    .contact h2{
-      font-size:40px;
-      margin-bottom:20px;
+    .contact-box h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
     }
 
-    .contact p{
-      line-height:1.8;
-      color:#ddd;
-      margin-bottom:15px;
+    .contact-box p {
+      color: #ddd;
+      line-height: 1.8;
+      margin-bottom: 15px;
     }
 
-    .contact-info{
-      background:rgba(255,255,255,0.08);
-      padding:30px;
-      border-radius:20px;
+    .contact-info {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 35px;
+      border-radius: 22px;
     }
 
-    .contact-info h3{
-      margin-bottom:25px;
-      color:#00c6ff;
+    .contact-info h3 {
+      margin-bottom: 25px;
+      color: #00c6ff;
     }
 
-    .contact-info p{
-      margin-bottom:15px;
-      font-size:17px;
+    .contact-info p {
+      margin-bottom: 18px;
+      font-size: 17px;
     }
 
-    footer{
-      background:#071225;
-      color:#ccc;
-      text-align:center;
-      padding:25px;
-      margin-top:60px;
+    /* FOOTER */
+
+    footer {
+      background: #071225;
+      color: #ccc;
+      text-align: center;
+      padding: 25px;
+      margin-top: 60px;
     }
 
     /* RESPONSIVE */
 
-    @media(max-width:768px){
+    @media(max-width:768px) {
 
-      .hero-text h1{
-        font-size:42px;
+      nav {
+        display: none;
       }
 
-      nav{
-        display:none;
+      .hero-content h1 {
+        font-size: 42px;
       }
 
-      .contact{
-        padding:40px 25px;
+      .contact-box {
+        padding: 40px 25px;
       }
 
     }
@@ -317,7 +354,10 @@
   <!-- HEADER -->
 
   <header>
-    <div class="logo">CRM <span>Insurance</span></div>
+
+    <div class="logo">
+      CRM <span>Insurance</span>
+    </div>
 
     <nav>
       <a href="#home">Home</a>
@@ -325,22 +365,27 @@
       <a href="#companies">Companies</a>
       <a href="#contact">Contact</a>
     </nav>
+
   </header>
 
   <!-- HERO -->
 
   <section class="hero" id="home">
 
-    <div class="hero-text">
-      <h1>Secure Your Future With <span>Trusted Insurance Services</span></h1>
+    <div class="hero-content">
+
+      <h1>
+        Protect Your Future With <span>Trusted Insurance Services</span>
+      </h1>
 
       <p>
         Get affordable and reliable Motor Insurance, Health Insurance,
-        Life Insurance, Travel Insurance and more with fast claim support
+        Life Insurance and Travel Insurance with best claim assistance
         from India's leading insurance companies.
       </p>
 
-      <div class="hero-btns">
+      <div class="hero-buttons">
+
         <a href="tel:6375005698" class="btn btn-primary">
           Call Now
         </a>
@@ -348,7 +393,9 @@
         <a href="#contact" class="btn btn-secondary">
           Get Free Consultation
         </a>
+
       </div>
+
     </div>
 
   </section>
@@ -359,44 +406,171 @@
 
     <div class="section-title">
       <h2>Our Insurance Services</h2>
-      <p>Professional insurance solutions for every need</p>
+      <p>Click any service to see complete details</p>
     </div>
 
     <div class="services">
 
-      <div class="service-card">
+      <!-- MOTOR -->
+
+      <div class="service-card" onclick="toggleInfo('motor')">
+
         <div class="service-icon">🚗</div>
+
         <h3>Motor Insurance</h3>
+
         <p>
-          Affordable car and bike insurance plans with quick claim settlement and maximum coverage benefits.
+          Car & bike insurance with accident protection and fast claim support.
         </p>
+
+        <div class="service-details" id="motor">
+
+          <h4>What We Cover</h4>
+
+          <ul>
+            <li>Car Insurance</li>
+            <li>Bike Insurance</li>
+            <li>Third Party Insurance</li>
+            <li>Comprehensive Insurance</li>
+            <li>Accident Cover</li>
+            <li>Vehicle Theft Protection</li>
+            <li>Natural Disaster Damage</li>
+            <li>Zero Depreciation Cover</li>
+          </ul>
+
+          <h4>Claim Services</h4>
+
+          <ul>
+            <li>Cashless garage support</li>
+            <li>Quick claim process</li>
+            <li>Instant assistance</li>
+            <li>Documentation support</li>
+          </ul>
+
+        </div>
+
       </div>
 
-      <div class="service-card">
+      <!-- HEALTH -->
+
+      <div class="service-card" onclick="toggleInfo('health')">
+
         <div class="service-icon">🏥</div>
+
         <h3>Health Insurance</h3>
+
         <p>
-          Protect your family with low-cost medical insurance plans and cashless hospitalization facilities.
+          Affordable health plans for individuals and families.
         </p>
+
+        <div class="service-details" id="health">
+
+          <h4>What We Cover</h4>
+
+          <ul>
+            <li>Hospital Expenses</li>
+            <li>Cashless Treatment</li>
+            <li>Medicines & Tests</li>
+            <li>ICU Charges</li>
+            <li>Family Health Plans</li>
+            <li>Critical Illness Cover</li>
+            <li>Emergency Hospitalization</li>
+            <li>Pre & Post Hospitalization</li>
+          </ul>
+
+          <h4>Benefits</h4>
+
+          <ul>
+            <li>Low premium plans</li>
+            <li>Tax saving benefits</li>
+            <li>Network hospital support</li>
+            <li>Quick medical claim help</li>
+          </ul>
+
+        </div>
+
       </div>
 
-      <div class="service-card">
+      <!-- LIFE -->
+
+      <div class="service-card" onclick="toggleInfo('life')">
+
         <div class="service-icon">❤️</div>
+
         <h3>Life Insurance</h3>
+
         <p>
-          Secure your loved ones with trusted life insurance and future financial protection plans.
+          Financial security plans for your family and future goals.
         </p>
+
+        <div class="service-details" id="life">
+
+          <h4>What We Cover</h4>
+
+          <ul>
+            <li>Term Insurance</li>
+            <li>Child Education Plans</li>
+            <li>Retirement Plans</li>
+            <li>Investment Plans</li>
+            <li>Whole Life Policies</li>
+            <li>Family Financial Protection</li>
+            <li>Money Back Policies</li>
+          </ul>
+
+          <h4>Benefits</h4>
+
+          <ul>
+            <li>Long term financial security</li>
+            <li>Future savings plans</li>
+            <li>Family support protection</li>
+            <li>Tax saving advantages</li>
+          </ul>
+
+        </div>
+
       </div>
 
-      <div class="service-card">
+      <!-- TRAVEL -->
+
+      <div class="service-card" onclick="toggleInfo('travel')">
+
         <div class="service-icon">✈️</div>
+
         <h3>Travel Insurance</h3>
+
         <p>
-          Enjoy stress-free travel with domestic and international travel insurance coverage.
+          Safe travel insurance for domestic and international journeys.
         </p>
+
+        <div class="service-details" id="travel">
+
+          <h4>What We Cover</h4>
+
+          <ul>
+            <li>International Travel Insurance</li>
+            <li>Medical Emergency Abroad</li>
+            <li>Trip Cancellation</li>
+            <li>Lost Baggage Cover</li>
+            <li>Flight Delay Coverage</li>
+            <li>Passport Loss Assistance</li>
+            <li>Personal Accident Cover</li>
+          </ul>
+
+          <h4>Benefits</h4>
+
+          <ul>
+            <li>Worldwide emergency support</li>
+            <li>Travel stress protection</li>
+            <li>Affordable premium plans</li>
+            <li>Fast claim assistance</li>
+          </ul>
+
+        </div>
+
       </div>
 
     </div>
+
   </section>
 
   <!-- COMPANIES -->
@@ -404,10 +578,15 @@
   <section class="section companies" id="companies">
 
     <div class="section-title">
-      <h2 style="color:white;">Popular Insurance Companies</h2>
+
+      <h2 style="color:white;">
+        Popular Insurance Companies
+      </h2>
+
       <p style="color:#ddd;">
-        We work with India's trusted insurance providers
+        Trusted insurance providers in India
       </p>
+
     </div>
 
     <div class="company-grid">
@@ -430,30 +609,38 @@
   <section class="section">
 
     <div class="section-title">
-      <h2>Why Choose Us</h2>
-      <p>Trusted advice with best customer support</p>
+
+      <h2>Why Choose CRM Insurance</h2>
+
+      <p>
+        Trusted service with affordable insurance plans
+      </p>
+
     </div>
 
     <div class="why-us">
 
       <div class="why-box">
         <h3>Lowest Premium Plans</h3>
+
         <p>
-          Get affordable insurance policies with maximum coverage benefits at competitive prices.
+          Affordable insurance policies with maximum protection benefits.
         </p>
       </div>
 
       <div class="why-box">
-        <h3>Fast Claim Support</h3>
+        <h3>Fast Claim Assistance</h3>
+
         <p>
-          Hassle-free and quick claim assistance for all insurance services.
+          Easy and quick claim support for all insurance services.
         </p>
       </div>
 
       <div class="why-box">
         <h3>Professional Guidance</h3>
+
         <p>
-          Expert insurance consultation according to your personal and family needs.
+          Expert consultation according to your needs and budget.
         </p>
       </div>
 
@@ -465,29 +652,42 @@
 
   <section class="section" id="contact">
 
-    <div class="contact">
+    <div class="contact-box">
 
       <div>
+
         <h2>Get In Touch</h2>
 
         <p>
-          Contact us today for the best insurance plans and professional advice.
+          Contact us today for affordable insurance plans
+          and trusted claim support services.
         </p>
 
         <p>
-          We help customers choose the right insurance with affordable pricing and trusted claim services.
+          We help customers choose the best insurance
+          according to their needs and budget.
         </p>
+
       </div>
 
       <div class="contact-info">
 
         <h3>Contact Details</h3>
 
-        <p><strong>Insurance Adviser:</strong> Chhotu Ram Mahawar</p>
+        <p>
+          <strong>Insurance Adviser:</strong>
+          Chhotu Ram Mahawar
+        </p>
 
-        <p><strong>Mobile:</strong> +91 6375005698</p>
+        <p>
+          <strong>Mobile:</strong>
+          +91 6375005698
+        </p>
 
-        <p><strong>Email:</strong> khemchand613@gmail.com</p>
+        <p>
+          <strong>Email:</strong>
+          khemchand613@gmail.com
+        </p>
 
       </div>
 
@@ -498,29 +698,42 @@
   <!-- FOOTER -->
 
   <footer>
-    © 2026 CRM Insurance Services | All Rights Reserved | Managed By RG Kuiwala
+    © 2026 CRM Insurance Services | All Rights Reserved
   </footer>
 
-  <!-- JAVASCRIPT -->
+  <!-- JS -->
 
   <script>
 
-    // Smooth header shadow on scroll
+    // HEADER SHADOW
 
-    window.addEventListener("scroll", function(){
+    window.addEventListener("scroll", function () {
 
       const header = document.querySelector("header");
 
-      if(window.scrollY > 50){
+      if (window.scrollY > 50) {
         header.style.boxShadow = "0 5px 20px rgba(0,0,0,0.3)";
-      } else {
+      }
+
+      else {
         header.style.boxShadow = "none";
       }
 
     });
 
+    // SERVICE TOGGLE
+
+    function toggleInfo(id) {
+
+      const details = document.getElementById(id);
+
+      details.classList.toggle("active");
+
+    }
+
   </script>
 
 </body>
+
 </html>
 
