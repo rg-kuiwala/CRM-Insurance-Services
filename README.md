@@ -1,4 +1,4 @@
-# 🚀 Mahawar Insurance Services Website
+# 🚀 CRM Insurance Services Website
 
 A modern, responsive and professional single-page insurance website built using **HTML, CSS & JavaScript**.
 This website is designed for insurance advisers and agencies offering services like:
